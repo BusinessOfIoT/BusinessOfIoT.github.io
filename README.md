@@ -1,2 +1,3 @@
-# BusinessOfIoT.github.io
-Business of IoT Website
+# Business of IoT Website
+
+Website for http://buinessofiot.io

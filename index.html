@@ -1,0 +1,83 @@
+---
+layout: biziot
+---
+<div class="container">
+    <div class="row">
+        <a name="about"></a>
+    <div class="text-justify col-sm-12"> 
+<p class="lead">
+The Business of IoT is a meetup group looking at the business models, technology platforms and data that are behind the IoT. 
+</p>
+<p class="lead">
+Our focus is the business side of IoT. We want bring together established and up-and-coming players in the commercial IoT, to reflect and discuss what needs to happen to leverage the huge potential of connected devices across and build bridges into the often closed ecosystems of different vendors. 
+</p>
+<p class="text-left">
+Our core themes are 
+<ul>
+<li> business models supported by IoT  
+<li> bringing it all together, how to connect data silos, open up and share your data in the ecosystem 
+<li> the broader world and how to bring location and physical context together 
+<li> devices at scale, meshed networks, NFC, Thread and other emerging standards 
+<li> scalable platforms and models - the backend of IoT, how do you deal will billions of events a day, support, customer service 
+<li> supporting technologies - what technologies can support business at this scale
+ </div>
+    
+  </div>
+  <hr />
+  <div class="row">
+      <div class="col-sm-6 text-left">
+          <a name="next"></a>
+      <h3 class="text-center">Upcoming Meetups</h3>
+ 
+   {% for meetup in site.data.meetups %}
+   <h4 class="text-center">{{ meetup.meetup }}</h4>
+   <p class="text-left">{{ meetup.when | date: '%R' }}, {{ meetup.when  | date: '%B %d, %Y' }} at <a href="{{ meetup.googlemap }}">{{ meetup.location_abbreviated }}</a></p>
+   <p class="text-left">
+   {{ meetup.description }}
+    </p>
+    <p class="text-center"><a href="{{ meetup.url }}">Register for this meetup</a>
+    </p>
+   {% endfor %}
+
+ 
+   <h3 class="text-center">Past Meetups</h3>
+   <p class="text-left">
+       {% for meetup in site.data.pastmeetups %}
+       <a href="{{ meetup.url }}">{{ meetup.meetup }}</a><br />
+        {%endfor %}
+    </p>
+  </div>
+  <div class="col-sm-6 text-center">
+      <h3 class="text-center">Sponsors</h3>
+      <a name="sponsors"></a> 
+      {% for sponsor in site.data.sponsors %}
+      <p class="text-center">
+      <a href="{{ sponsor.url }}" target="_new"><img src="{{ sponsor.image }}"></a><br /><br />
+        {{ sponsor.text }}
+        </p>
+        {% endfor %}
+  </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm-4 text-center">
+        <a name="submit"></a>
+            <h4>Submit A Talk</h4>
+      <p class="text-left">We love receiving interesting talk submissions for upcoming meetups. Do you have something interesting to present? Let us know.</p>
+<button type="button" class="btn btn-success btn-sm">Submit a Talk</button>
+    </div>
+    <div class="text-center col-sm-4">
+      <h4>Sponsorship Details</h4>
+      <p class="text-left">Interested in sponsoring the meetup? Get in contact. </p>
+      <button type="button" class="btn btn-success btn-sm">Sponsor Us</button>
+       </div>
+       <div class="text-center col-sm-4">
+           <a name="newsletter"></a>
+      <h4>Newsletter Submissions</h4>
+      <p class="text-left">We send periodic updates to the community, if you have something interesting submit it here. </p>
+      <p class="text-left">Please do note that doing a submission does not guarantee inclusion in the newsletter.</p>
+      <a href="foo.html"><button type="button" class="btn btn-success btn-sm">Submit Newsletter Content</button></a>
+    </div>
+  </div>
+  <hr>
+  </div>
