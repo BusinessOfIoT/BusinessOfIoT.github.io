@@ -1,9 +1,10 @@
 # when is in a basic timestamp  - Year-Month-Day HH:MM (24hr clock)
 
-- meetup: The Business of IoT, February 2016
-  when: 2016-02-08 19:00  
-  location_abbreviated: Geovation Lab, Clerkenwell 
-  location: Geovation, 1 Sekforde St, Clerkenwell Green, London, EC1R 0BE
-  googlemap: https://goo.gl/maps/hRN83e2hiE12   
-  description: 'Shaun Mulligan from <a href="http://Resin.io">resin.io</a> will be joining us to talk through the business case and applications of the solutions the Resin team are building.  <br /><br /> Resin provide a solution which allows companies to easily manage, secure and update large fleets of IoT devices. An example use case here in London is how <a href="http://pactcofee.com">Pact Coffee</a> is using resin in their <a href="https://resin.io/blog/pact-resin-io/">production process</a>.'   
-  url: http://www.meetup.com/The-Business-of-IOT/events/228058570/
+- meetup: The Business of IoT, March 2016
+  when: 2016-03-00 19:00  
+  location_abbreviated: TBC, Cambridge
+  location: TBC, Cambridge
+  googlemap: 
+  description: 'We will be holding a special Business of IoT Meetup / Social in Cambridge on March 9th in conjunction with the IoT Forum 2016 (<a href="http://iot.thebln.com">http://iot.thebln.com</a>). More details to follow.'
+ 
+  url: http://www.meetup.com/The-Business-of-IOT/events/228699892/
